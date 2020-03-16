@@ -12,9 +12,7 @@ function createWindow () {
     }
   })
 
-  // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
-
+  mainWindow.loadURL('http://localhost:8890/?token=324ce428b41ccb183c149b0d0cd3eb3f10a026ab8ecd17db')
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
