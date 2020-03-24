@@ -28,6 +28,7 @@ async function createWindow() {
     "conda",
     [
       "run",
+      "-vvv",
       "-n",
       env,
       "jupyter",
@@ -42,7 +43,7 @@ async function createWindow() {
   );
   console.log("starting up");
   // Wait a second to startup
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise(resolve => setTimeout(resolve, 2000));
   console.log("done starting up");
   // Create the browser window.
   const mainWindow = new BrowserWindow({
